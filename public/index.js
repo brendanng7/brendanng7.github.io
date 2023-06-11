@@ -140,6 +140,7 @@ function blackScreen(){
 	setTimeout(()=>{
 		Introduction();
 		screen_bottom.classList.remove("bottom_startup");
+		document.getElementById("attack_menu").classList.remove("bottom_startup");
 		screen_bottom.classList.remove("startup2")
 		screen_top.classList.remove("startup2");
 	}, 8000)
