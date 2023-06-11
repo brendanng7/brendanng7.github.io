@@ -1,0 +1,137 @@
+@media screen and (max-height:770px) {
+    #controls {
+        display: none;
+    }
+}
+
+@media screen and (min-height: 770px) and (max-height: 820px){
+    #controls {
+        bottom: 5%;
+    }
+}
+
+@media screen and (min-height:820px) {
+    #controls {
+        bottom: 5rem;
+    }
+}
+
+.rain{
+    display: flex;
+}
+
+.rain div{
+    animation: raindrop 0.5s linear 0s infinite;
+    animation-delay: calc(1s/var(--delay));
+}
+
+@keyframes raindrop {
+    from {translate: 0% 0%;}
+    to {translate: 10% 700%;}
+}
+
+.damaged{
+    animation: damage 0.1s linear 0s 4;
+}
+
+@keyframes damage {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.paper-left{
+    animation: paperfall-left 2s ease-in-out 1;
+}
+
+@keyframes paperfall-left {
+    0% {
+        translate: 0% 0%;
+        opacity: 1;
+    }
+    30% {
+        translate: -20% 200%;
+        opacity: 0.6;
+    }
+    60% {
+        translate: 20% 300%;
+        opacity: 0.3;
+    }
+    100% {
+        translate: 0% 400%;
+        opacity: 0;
+    }
+}
+
+.paper-right{
+    animation: paperfall-right 2s ease-in-out 1;
+}
+
+@keyframes paperfall-right {
+    0% {
+        translate: 0% 0%;
+        opacity: 1;
+    }
+    30% {
+        translate: 20% 200%;
+        opacity: 0.6;
+    }
+    60% {
+        translate: -20% 300%;
+        opacity: 0.3;
+    }
+    100% {
+        translate: 0% 400%;
+        opacity: 0;
+    }
+}
+
+.shine{
+    animation: shine 20s linear 0s infinite;
+}
+
+@keyframes shine {
+    0%{translate: -100vw -100vh;}
+    15%{translate:300vw -50vh;}
+    100%{translate:300vw -50vh;}
+}
+
+.shrink{
+    animation: shrink 1s ease-in 1;
+}
+
+@keyframes shrink {
+    from{transform: scale(100%);}
+    to{transform: scale(0%);}
+}
+
+.startup1{
+    animation: startup1 1s ease-in-out 0.5s;
+}
+
+@keyframes startup1 {
+    0%{background-color: #081820; color: #081820;}
+    1%{background-color: #152d3a; color: #152d3a;}
+    99%{background-color: #152d3a; color: #152d3a;}
+    100%{background-color: #081820; color: #081820;}
+}
+
+.startup2{
+    animation: startup2 2s ease-in;
+}
+
+@keyframes startup2 {
+    0%{background-color: #081820; color: #081820;}
+    50%{background-color: #F8FAFC; color: #F8FAFC;}
+    100%{background-color: transparent; color:#081820;}
+}
+
+.bottom_startup{
+    animation: bottom 2s ease-in;
+}
+
+@keyframes bottom {
+    0%{border-color: #081820; background-color: #081820;}
+    50%{border-color: #F8FAFC; background-color: #F8FAFC;}
+    100%{border-color: #081820; background-color: #FFFBEB;}
+}

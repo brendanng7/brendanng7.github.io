@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Brendan Ng">
+  <meta name="description" content="NUS Computer Science Undergraduate Portfolio Website">
+  <title>Brendan Ng's Portfolio Website</title>
+  <link rel="stylesheet" href="output.css">
+  <link rel="stylesheet" href="styles.css">
+  <link href="//db.onlinewebfonts.com/c/1c1b3fdb31c3460a94aa5f52255b0388?family=Pokemon+Fire+Red" rel="stylesheet" type="text/css"/>
+  <link rel="icon" href="assets/sad-doggo.png" type="image/x-icon">
+</head>
+<header class="relative text-pkblack">
+  <nav class="shadow-lg font-pokemon text-2xl sm:text-4xl">  
+    <div class="flex justify-center h-9">
+    </div>
+    <div class="absolute top-0 bg-[#5a9294] w-full h-[100vh] -z-50 overflow-hidden">
+      <div class="shine">
+        <div class="shine_line left-[5%]"></div>
+        <div class="shine_line"></div>
+        <div class="shine_line -left-[100%]"></div>
+        <div class="shine_line -left-[105%]"></div>
+    </div>
+  </nav>
+</header>
+
+<body class="bg-cyan-200 text-pkblack font-pokemon" onload="blackScreen()">
+  <div class="grid grid-cols-12 h-[95vh]">
+    <div class="col-span-12 sm:col-start-2 sm:col-span-10 md:col-start-3 md:col-span-8 lg:col-start-4 lg:col-span-6">
+      <div id="screen-top" class="bg-pkblack startup1 overflow-hidden sm:mt-4 sm:rounded-2xl sm:border-8 border-t-4 border-pkblack">
+        <div class="absolute w-full sm:w-[81%] md:w-[65%] lg:w-[49.2%]">
+          <p id="intro-text" class="flex justify-center h-[30rem] items-center text-3xl text-slate-50"></p>
+        </div>
+        <div class="relative h-44 -z-20">
+          <div class="absolute w-full bg-sky-900 h-96">
+            <div class="rain">
+              <div class="raindrop1" style="--delay:2"></div>
+              <div class="raindrop1" style="--delay:5"></div>
+              <div class="raindrop1" style="--delay:3"></div>
+              <div class="raindrop1" style="--delay:1"></div>
+              <div class="raindrop1" style="--delay:8"></div>
+              <div class="raindrop1" style="--delay:4"></div>
+              <div class="raindrop1" style="--delay:1"></div>
+              <div class="raindrop1" style="--delay:5"></div>
+              <div class="raindrop1" style="--delay:8"></div>
+              <div class="raindrop1" style="--delay:2"></div>
+              <div class="raindrop1" style="--delay:5"></div>
+              <div class="raindrop1" style="--delay:3"></div>
+              <div class="raindrop1" style="--delay:1"></div>
+              <div class="raindrop1" style="--delay:8"></div>
+              <div class="raindrop1" style="--delay:4"></div>
+              <div class="raindrop1" style="--delay:1"></div>
+              <div class="raindrop1" style="--delay:5"></div>
+              <div class="raindrop1" style="--delay:8"></div>
+            </div>
+          </div>
+          <div class="absolute -top-28 right-6 sm:right-20 z-30">
+            <div id="paper-right" class="flex">
+              <div class="paper_attack rotate-[25deg] ">
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi praesentium mollitia molestias dolorum? Doloremque dignissimos aliquid hic earum ullam! Dolorem officiis nobis minus voluptas, est dolorum aut eaque reprehenderit dicta.</span>
+              </div>
+              <div class="paper_attack rotate-[-8deg]">
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi praesentium mollitia molestias dolorum? Doloremque dignissimos aliquid hic earum ullam! Dolorem officiis nobis minus voluptas, est dolorum aut eaque reprehenderit dicta.</span>
+              </div>
+              <div class="paper_attack rotate-[-18deg]">
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi praesentium mollitia molestias dolorum? Doloremque dignissimos aliquid hic earum ullam! Dolorem officiis nobis minus voluptas, est dolorum aut eaque reprehenderit dicta.</span>
+              </div>
+            </div>
+            <div id="paper-left" class="flex">
+              <div class="paper_attack rotate-[50deg]">
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi praesentium mollitia molestias dolorum? Doloremque dignissimos aliquid hic earum ullam! Dolorem officiis nobis minus voluptas, est dolorum aut eaque reprehenderit dicta.</span>
+              </div>
+              <div class="paper_attack rotate-[16deg]">
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi praesentium mollitia molestias dolorum? Doloremque dignissimos aliquid hic earum ullam! Dolorem officiis nobis minus voluptas, est dolorum aut eaque reprehenderit dicta.</span>
+              </div>
+              <div class="paper_attack rotate-[-40deg]">
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi praesentium mollitia molestias dolorum? Doloremque dignissimos aliquid hic earum ullam! Dolorem officiis nobis minus voluptas, est dolorum aut eaque reprehenderit dicta.</span>
+              </div>
+            </div>
+          </div>
+          <div class="left-4 top-4 player_info z-20">
+            <p class="inline-block text-2xl m-2 ml-5">Brendan Ng</p>
+            <p class="inline-block float-right m-2 text-xl mr-5">lv 21</p>
+            <div class="health_bar_outer">
+              <div id="enemy_health" class="health_bar_inner bg-pklightgreen" style="width: 100%"></div>
+            </div>
+          </div>
+          <img id="enemy_img" class="absolute right-0 sm:right-16 h-48 top-6 z-20" src="assets/nerd.png" alt="pokemon-nerd">
+          <div class="absolute -right-12 sm:right-8 -z-0 top-20">
+            <div class="flex justify-center items-center w-64 h-40 bg-slate-700 rounded-[50%] shadow-xl">
+              <div class="w-60 h-36 bg-slate-600 rounded-[50%]"></div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="relative h-44 -z-10">
+          <div class="absolute bottom-10">
+            <div id="pokeball" style="display: none;" class="relative ml-20 sm:ml-36 h-8 w-8 border-[1rem] border-l-red-400 border-t-red-400 rotate-45 rounded-full justify-center items-center">
+              <!-- <svg id="open_mail" class="absolute -rotate-45 text-pkblack" height="1.5rem" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><title>envelope-open</title><path d="M30.738 11.941c-0-0.030-0.002-0.059-0.006-0.088l0 0.004c-0.009-0.033-0.019-0.060-0.030-0.086l0.002 0.005c-0.014-0.044-0.029-0.082-0.047-0.119l0.002 0.004c-0.014-0.030-0.027-0.055-0.042-0.079l0.002 0.003-0.010-0.021c-0.011-0.016-0.029-0.024-0.041-0.039-0.028-0.034-0.058-0.064-0.090-0.091l-0.001-0.001c-0.016-0.013-0.024-0.032-0.041-0.044l-14.024-10.011c-0.041-0.025-0.089-0.047-0.14-0.064l-0.005-0.001c-0.078-0.041-0.17-0.064-0.267-0.064s-0.189 0.024-0.27 0.066l0.003-0.002c-0.055 0.018-0.103 0.040-0.148 0.067l0.003-0.002-0.024 0.011-14 10c-0.017 0.012-0.025 0.031-0.041 0.044-0.033 0.028-0.062 0.057-0.089 0.089l-0.001 0.001c-0.013 0.016-0.032 0.024-0.044 0.041l-0.010 0.023c-0.012 0.020-0.025 0.044-0.036 0.069l-0.002 0.004c-0.016 0.032-0.032 0.070-0.044 0.109l-0.001 0.005c-0.009 0.022-0.019 0.049-0.027 0.077l-0.001 0.005c-0.003 0.025-0.005 0.054-0.006 0.083v0c-0.002 0.021-0.012 0.038-0.012 0.059v16c0.002 1.518 1.232 2.748 2.75 2.75h24c1.518-0.002 2.748-1.232 2.75-2.75v-16c0-0.021-0.010-0.038-0.012-0.059zM16 21.079l-12.71-9.079 12.71-9.079 12.71 9.079zM28 29.25h-24c-0.69-0.001-1.249-0.56-1.25-1.25v-14.543l12.814 9.152c0.013 0.010 0.031 0.006 0.044 0.014 0.108 0.073 0.241 0.119 0.383 0.124l0.001 0 0.005 0.002h0.002l0.005-0.002c0.144-0.005 0.276-0.051 0.387-0.126l-0.003 0.002c0.014-0.009 0.031-0.005 0.044-0.014l12.814-9.152v14.543c-0.001 0.69-0.56 1.249-1.25 1.25h-0z"></path></svg>
+              <svg id="letter_mail" class="absolute -rotate-45 text-pkblack" height="1.5rem" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><title>envelope-open-text</title><path d="M30.734 11.923c-0.010-0.108-0.044-0.207-0.096-0.293l0.002 0.003c-0.011-0.028-0.021-0.050-0.033-0.072l0.002 0.004c-0.011-0.016-0.029-0.024-0.041-0.039-0.035-0.040-0.073-0.076-0.114-0.107l-0.002-0.001c-0.067-0.058-0.149-0.102-0.24-0.124l-0.004-0.001c-0.044-0.015-0.096-0.025-0.149-0.031l-0.003-0c-0.020-0.002-0.036-0.011-0.056-0.011-4.391 0.764-4.469 0.78-4.547 0.796l4.317-0.75c-0.051 0.017-0.095 0.038-0.136 0.062l0.003-0.002c-0.029 0.011-0.054 0.023-0.077 0.035l0.004-0.002-1.814 1.296v-8.686c-0.002-1.518-1.232-2.748-2.75-2.75h-18c-1.518 0.002-2.748 1.232-2.75 2.75v8.686l-1.814-1.296c-0.019-0.010-0.043-0.021-0.067-0.031l-0.005-0.002c-0.039-0.023-0.084-0.044-0.131-0.060l-0.005-0.002c-0.045-0.015-0.097-0.026-0.151-0.031l-0.003-0c-0.019-0.005-0.044-0.011-0.069-0.014l-0.004-0.001c-0.020 0-0.037 0.010-0.057 0.012-0.057 0.005-0.109 0.016-0.159 0.032l0.005-0.001c-0.049 0.014-0.092 0.030-0.133 0.050l0.004-0.002c-0.044 0.024-0.081 0.050-0.116 0.079l0.001-0.001c-0.042 0.032-0.079 0.066-0.111 0.104l-0.001 0.001c-0.013 0.016-0.032 0.024-0.044 0.041-0.010 0.019-0.021 0.042-0.030 0.067l-0.002 0.005c-0.049 0.082-0.082 0.179-0.092 0.284l-0 0.003c-0.006 0.021-0.011 0.047-0.015 0.074l-0 0.004v16c0.002 1.518 1.232 2.748 2.75 2.75h24c1.518-0.002 2.748-1.232 2.75-2.75v-16c-0.004-0.030-0.010-0.057-0.017-0.082l0.001 0.005zM5.75 4c0.001-0.69 0.56-1.249 1.25-1.25h18c0.69 0.001 1.249 0.56 1.25 1.25v9.757l-4.889 3.493h-10.721l-4.889-3.493zM16 21.079l-3.261-2.329h6.522zM28 29.25h-24c-0.69-0.001-1.249-0.56-1.25-1.25v-14.543l12.814 9.152c0.013 0.010 0.031 0.006 0.044 0.014 0.108 0.073 0.241 0.119 0.383 0.124l0.001 0 0.005 0.002h0.002l0.005-0.002c0.144-0.005 0.276-0.051 0.387-0.126l-0.003 0.002c0.014-0.009 0.031-0.005 0.044-0.014l12.814-9.152v14.543c-0.001 0.69-0.56 1.249-1.25 1.25h-0zM9 6.75h14c0.414 0 0.75-0.336 0.75-0.75s-0.336-0.75-0.75-0.75v0h-14c-0.414 0-0.75 0.336-0.75 0.75s0.336 0.75 0.75 0.75v0zM9 10.75h14c0.414 0 0.75-0.336 0.75-0.75s-0.336-0.75-0.75-0.75v0h-14c-0.414 0-0.75 0.336-0.75 0.75s0.336 0.75 0.75 0.75v0zM23 14.75c0.414 0 0.75-0.336 0.75-0.75s-0.336-0.75-0.75-0.75v0h-14c-0.414 0-0.75 0.336-0.75 0.75s0.336 0.75 0.75 0.75v0z"></path></svg> -->
+              <svg id="close_mail" class="absolute -rotate-45 text-pkblack" height="1.5rem" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><title>envelope</title><path d="M28 4.25h-24c-1.518 0.002-2.748 1.232-2.75 2.75v18c0.002 1.518 1.232 2.748 2.75 2.75h24c1.518-0.002 2.748-1.232 2.75-2.75v-18c-0.002-1.518-1.232-2.748-2.75-2.75h-0zM4 5.75h24c0.563 0.005 1.036 0.386 1.18 0.904l0.002 0.009-13.182 9.416-13.182-9.416c0.146-0.527 0.619-0.908 1.181-0.913h0.001zM28 26.25h-24c-0.69-0.001-1.249-0.56-1.25-1.25v-16.543l12.814 9.153c0.014 0.010 0.032 0.006 0.046 0.015 0.108 0.073 0.24 0.118 0.382 0.123l0.001 0 0.005 0.002h0.002l0.005-0.002c0.143-0.005 0.275-0.051 0.386-0.125l-0.003 0.002c0.014-0.009 0.032-0.005 0.046-0.015l12.814-9.153v16.543c-0.001 0.69-0.56 1.249-1.25 1.25h-0z"></path></svg>
+            </div>
+          </div>
+          <div class="right-4 bottom-16 player_info">
+            <p class="inline-block text-2xl m-2 ml-5">J.P. Morgan</p>
+            <p class="inline-block float-right m-2 text-xl mr-5">lv 224</p>
+            <div class="health_bar_outer">
+              <div class="health_bar_inner bg-pklightgreen" style="width: 100%;"></div>
+            </div>
+          </div>
+          <img class="absolute sm:left-10 bottom-0 h-20" src="assets/JP-Morgan.png" alt="JP-Morgan">
+          <div class="absolute -left-8 sm:left-8 -z-10 bottom-0">
+            <div class="flex justify-center items-center w-64 h-14 bg-slate-700 half-ellipse">
+              <div class="w-60 h-12 mt-2 bg-slate-600 half-ellipse"></div>
+            </div>
+          </div>
+        </div>
+  
+        <main id="screen-bottom" class="bg-pkblack startup1 h-fit text-3xl bg-amber-50  sm:border-b-0 border-pkblack -z-10">
+          <button id="textbox" onclick="nextText()" style="display: block;" class="col-span-3 flex justify-center text-2xl sm:text-3xl p-4 w-full">
+            <div class='' id='tech_top'>hi</div>
+            <div class='flex justify-center' id='tech_bottom'>yes</div>
+            <div class=''>This is just for the tooltip</div>
+          </button>
+          <div id="whole_menu" class="grid grid-cols-3" style="display:none;">
+            <div id="attack_menu" style="display: block;" class="px-1 col-span-2 grid-cols-2 grid-rows-2 text-2xl sm:text-3xl border-r-4 sm:border-r-8 border-pkblack">
+            </div>
+            <div id="social_menu" class="col-span-2 border-r-8 border-pkblack" style="display: none;"> 
+              <span id="social_top" class="flex justify-center"></span> 
+              <div id="social_middle" class="flex justify-center items-top"></div>
+              <span id="social_bottom" class="flex justify-center"></span> 
+            </div>
+            <div class="col-start-3 col-span-1 text-2xl sm:text-3xl">
+              <div class="grid sm:grid-cols-2 sm:grid-rows-2 sm:border-b-0 sm:border-r-0 border-pkdarkgreen">
+                <button class="menu_button" onclick="AboutMe()">
+                  ABOUT
+                </button>
+                <button class="menu_button" onclick="Hire()">
+                  HIRE
+                </button>
+                <button class="menu_button" onclick="ContactMe()">
+                  CONTACT
+                </button>
+                <button class="menu_button" onclick="Run1()" id="run_button">
+                  RUN
+                </button>
+              </div>
+            </div>
+          </div>
+        </main>
+        <div class="flex justify-center bg-pkblack text-slate-50">Nintendo</div>
+      </div>
+    </div>
+    <div id="controls" class="fixed md:left-1/4 md:w-6/12 w-full">
+      <div class="">
+        <div class="flex justify-around">
+          <div class="ml-6 grid grid-cols-3 grid-rows-3 w-44">
+            <button class="col-start-2 col-span-1 row-start-1 row-span-1">
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="3.5rem" height="3.5rem"><rect width="3.5rem" height="3.5rem" rx="10" ry="10" style="fill:#081820;fill-opacity:1;stroke:none"/><circle r="1.3rem" cx="1.75rem" cy="1.75rem" style="fill: #3f3f3f;;fill-opacity:1;stroke:none"/></svg>
+            </button>
+            <button class="col-start-2 col-span-1 row-start-3 row-span-1">
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="3.5rem" height="3.5rem"><rect width="3.5rem" height="3.5rem" rx="10" ry="10" style="fill:#081820;fill-opacity:1;stroke:none"/><circle r="1.3rem" cx="1.75rem" cy="1.75rem" style="fill: #3f3f3f;;fill-opacity:1;stroke:none"/></svg>
+            </button>
+            <button class="col-start-1 col-span-1 row-start-2 row-span-1">
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="3.5rem" height="3.5rem"><rect width="3.5rem" height="3.5rem" rx="10" ry="10" style="fill:#081820;fill-opacity:1;stroke:none"/><circle r="1.3rem" cx="1.75rem" cy="1.75rem" style="fill: #3f3f3f;;fill-opacity:1;stroke:none"/></svg>
+            </button>
+            <button class="col-start-3 col-span-1 row-start-2 row-span-1">
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="3.5rem" height="3.5rem"><rect width="3.5rem" height="3.5rem" rx="10" ry="10" style="fill:#081820;fill-opacity:1;stroke:none"/><circle r="1.3rem" cx="1.75rem" cy="1.75rem" style="fill: #3f3f3f;;fill-opacity:1;stroke:none"/></svg>
+            </button>
+          </div>
+          <div class="flex justify-center w-44">
+            <button class="mt-10 h-fit">
+              <svg class="h-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" enable-background="new 0 0 64 64"><path d="m36.929 34.225c-.688-.315-1.654-.479-2.899-.492h-7.143v7.736h7.045c1.258 0 2.238-.171 2.938-.512 1.271-.631 1.907-1.838 1.907-3.623 0-1.509-.616-2.545-1.848-3.109" /><path d="m37.008 28.211c.785-.479 1.179-1.329 1.179-2.55 0-1.352-.52-2.244-1.558-2.677-.896-.303-2.04-.453-3.43-.453h-6.313v6.397h7.053c1.26.001 2.284-.239 3.069-.717"/><path d="m32 2c-16.568 0-30 13.432-30 30s13.432 30 30 30 30-13.432 30-30-13.432-30-30-30m11.607 40.374c-.549.905-1.232 1.667-2.055 2.283-.927.709-2.02 1.194-3.279 1.457-1.259.263-2.625.394-4.1.394h-13.073v-29.016h14.023c3.537.052 6.044 1.082 7.52 3.09.888 1.234 1.332 2.71 1.332 4.43 0 1.771-.449 3.195-1.344 4.271-.502.604-1.238 1.154-2.214 1.653 1.481.538 2.599 1.392 3.353 2.56.753 1.168 1.13 2.585 1.13 4.252-.001 1.719-.431 3.261-1.293 4.626"/></svg>
+            </button>
+            <button class="mb-10 h-fit">
+              <svg class=" h-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" enable-background="new 0 0 64 64"><path d="m28.216 35.543h7.431l-3.666-11.418z"/><path d="m32 2c-16.568 0-30 13.431-30 30 0 16.569 13.432 30 30 30s30-13.432 30-30c0-16.569-13.432-30-30-30m7.167 44.508l-1.914-5.965h-10.686l-1.967 5.965h-6.342l10.358-29.016h6.859l10.266 29.016h-6.574"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="index.js"></script>
+</body>
+</html>

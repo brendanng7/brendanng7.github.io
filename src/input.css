@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url(//db.onlinewebfonts.com/c/1c1b3fdb31c3460a94aa5f52255b0388?family=Pokemon+Fire+Red);
+
+@font-face {
+    font-family: "Pokemon Fire Red"; 
+    src: url("//db.onlinewebfonts.com/t/1c1b3fdb31c3460a94aa5f52255b0388.eot"); src: url("//db.onlinewebfonts.com/t/1c1b3fdb31c3460a94aa5f52255b0388.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/1c1b3fdb31c3460a94aa5f52255b0388.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/1c1b3fdb31c3460a94aa5f52255b0388.woff") format("woff"), url("//db.onlinewebfonts.com/t/1c1b3fdb31c3460a94aa5f52255b0388.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/1c1b3fdb31c3460a94aa5f52255b0388.svg#Pokemon Fire Red") format("svg"); }
+
+
+.socials{
+    @apply hover:fill-pkwhite transition cursor-pointer w-8;
+}
+
+.one-line{
+    @apply absolute h-7 w-full bg-gradient-to-b from-pklightgreen block opacity-50 -z-50;
+}
+
+.half-ellipse{
+    border-radius: 50%/ 100% 100% 0 0;
+}
+
+
+.player_info{
+    @apply absolute bg-amber-50 rounded-xl border-pkdarkgreen border-2 h-20 sm:w-72 w-52;
+}
+
+.health_bar_outer{
+    @apply bg-pkblack rounded-full relative overflow-hidden h-5 mx-4;
+}
+
+.health_bar_inner{
+    @apply absolute rounded-full h-5 border-pkblack border-2;
+}
+
+.tooltip{
+    @apply group-hover:opacity-100 opacity-0 transition-opacity absolute left-1/2 -translate-x-1/2 translate-y-full;
+}
+
+.menu_button{
+    @apply p-1 sm:p-2 md:p-3 hover:scale-110;
+}
+
+.attack_button{
+    @apply hover:scale-110;
+}
+
+.raindrop1{
+    @apply h-16 w-[0.1rem] bg-blue-200 -rotate-6 ml-[5%] -mt-20;
+}
+
+.paper_attack{
+    @apply bg-slate-50 w-7 h-11 m-1 text-[0.2rem] rounded-sm;
+}
+
+.shine_line{
+    @apply absolute bg-[#b5e6d3] h-[300vh] w-8 rotate-45 blur-md;
+}
