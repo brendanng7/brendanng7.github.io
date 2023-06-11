@@ -252,7 +252,6 @@ function generalDisplay(textlist_chosen){
 	hideElement("whole_menu");
 	showElement("textbox", "block");
 	typeWriter("textbox", display_sequence[0]);
-	doDamage("enemy_health", 10);
 }
 
 function nextText(){
@@ -278,14 +277,17 @@ function nextText(){
 
 function Internships(){
 	generalDisplay(internships_display);
+	doDamage("enemy_health", 10);
 }
 
 function Education(){
 	generalDisplay(education_display);
+	doDamage("enemy_health", 10);
 }
 
 function Projects(){
 	generalDisplay(project_display);
+	doDamage("enemy_health", 10);
 }
 
 function Technology(){
